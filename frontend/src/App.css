@@ -1,0 +1,92 @@
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .container {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #222;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #444;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1.8px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+
+  input[type="text"]:focus {
+    border-color: #2978f0;
+    outline: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #2978f0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:disabled {
+    background: #a1b8f7;
+    cursor: not-allowed;
+  }
+
+  button:hover:not(:disabled) {
+    background: #1e5fcc;
+  }
+
+  .result {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    min-height: 1.5em;
+  }
+
+  .error {
+    color: #d93025;
+    font-weight: 700;
+  }
+
+  .loading {
+    font-style: italic;
+    color: #555;
+  }
+
+  .leaflet-control-attribution {
+    display: none !important;
+  } 
